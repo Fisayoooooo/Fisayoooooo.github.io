@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oluwafisayomi Oyolola // Information Systems Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Oluwafisayomi Oyolola - Undergraduate Information Systems Student at UMBC, CWIT Cyber Scholar, and Human-Centered Computing Researcher.">
+
+  <!-- Google Fonts: VT323 (pixel title), Press Start 2P (retro banner), Space Mono (monospace body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==============================================================================
+       DESKTOP WORKSPACE (HOME SCREEN)
+       ============================================================================== -->
+  <main class="desktop-viewport" id="desktopWorkspace">
+
+    <!-- Top OS System Header -->
+    <header class="os-header">
+      <div class="os-pill-badge" role="status">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>SYS.V2.8 // IS_WORKSTATION: READY</span>
+      </div>
+      <h1 class="portfolio-title">PORTFOLIO</h1>
+    </header>
+
+    <!-- Desktop Welcome Widget Card (Option 2: Pinned Memo / Desktop ID Card) -->
+    <section class="desktop-widget-container" aria-label="Welcome Card">
+      <div class="desktop-pinned-card">
+        <div class="pinned-card-tape" aria-hidden="true">
+          <span>&#128204; OPERATOR_CARD // PINNED_MEMO.TXT</span>
+        </div>
+        <div class="pinned-card-body">
+          <div class="pinned-card-photo-col">
+            <button type="button" class="pinned-photo-wrapper" data-folder="profile"
+              aria-label="Open Profile folder to view Fisayo's details" title="Click to view full Profile">
+              <div class="pinned-photo-frame">
+                <img id="widgetPinnedPhoto" src="new headshot finnally.jpeg" alt="Fisayo Oyolola photo"
+                  class="pinned-photo"
+                  onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" />
+                <div class="badge-fallback-avatar" aria-hidden="true" style="display: none;">
+                  <span>FO</span>
+                </div>
+              </div>
+              <span class="pinned-photo-caption">Fisayo Oyolola</span>
+            </button>
+          </div>
+          <div class="pinned-card-text-col">
+            <div class="pinned-card-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>SYS.OPERATOR // WELCOME</span>
+            </div>
+            <h2 class="pinned-card-title" id="widgetGreeting">Hi, I'm Fisayo!</h2>
+            <p class="pinned-card-bio" id="widgetBio">
+              Welcome to my digital workstation. I'm an undergraduate Information Systems student and CWIT Cyber Scholar
+              at UMBC exploring Human-Centered Computing, cybersecurity, and dataset governance. Click any folder below
+              to check out my experience, updates, and awards!
+            </p>
+            <div class="pinned-card-actions">
+              <button type="button" class="retro-action-btn" data-folder="profile" aria-label="Open Profile window">
+                &#128193; View Full Profile &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="portfolio-tagline" id="portfolioTagline">
+      B.S. in Information Systems (Class of 2028) · University of Maryland, Baltimore County (UMBC) — UMBC Honors
+      College & CWIT Cyber Scholar
+    </p>
+
+    <!-- Desktop Folders Navigation Grid -->
+    <section class="folders-section" aria-label="Portfolio Sections">
+      <div class="desktop-guide" aria-hidden="true">[ CLICK ON ANY FOLDER TO OPEN WINDOW ]</div>
+
+      <div class="folders-grid" role="region" aria-label="Desktop Folders">
+
+        <!-- Folder 1: Profile -->
+        <button type="button" class="folder-card" data-folder="profile" aria-haspopup="dialog"
+          aria-label="Open Profile folder">
+          <span class="folder-index-badge">01</span>
+          <div class="folder-icon-wrapper" aria-hidden="true">
+            <svg class="folder-icon-svg" viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="8" width="26" height="8" fill="#556c52" stroke="#1b261a" stroke-width="2" rx="1" />
+              <rect x="2" y="14" width="60" height="34" fill="#93a891" stroke="#1b261a" stroke-width="2" rx="2" />
+              <rect x="6" y="18" width="52" height="26" fill="#fcfbfa" stroke="#1b261a" stroke-width="1.5" />
+              <!-- User silhouette badge -->
+              <circle cx="32" cy="27" r="4" fill="#556c52" stroke="#1b261a" stroke-width="1.5" />
+              <path d="M23 40 C23 34, 41 34, 41 40 Z" fill="#556c52" stroke="#1b261a" stroke-width="1.5" />
+            </svg>
+          </div>
+          <span class="folder-label">Profile</span>
+          <span class="folder-subtext">Bio, Major & Skills</span>
+        </button>
+
+        <!-- Folder 2: Experience -->
+        <button type="button" class="folder-card" data-folder="research" aria-haspopup="dialog"
+          aria-label="Open Experience folder">
+          <span class="folder-index-badge">02</span>
+          <div class="folder-icon-wrapper" aria-hidden="true">
+            <svg class="folder-icon-svg" viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="8" width="26" height="8" fill="#556c52" stroke="#1b261a" stroke-width="2" rx="1" />
+              <rect x="2" y="14" width="60" height="34" fill="#93a891" stroke="#1b261a" stroke-width="2" rx="2" />
+              <rect x="6" y="18" width="52" height="26" fill="#fcfbfa" stroke="#1b261a" stroke-width="1.5" />
+              <!-- Research & briefcase/document icon -->
+              <rect x="22" y="21" width="20" height="20" fill="#e4eee2" stroke="#1b261a" stroke-width="1.5" />
+              <line x1="26" y1="26" x2="38" y2="26" stroke="#1b261a" stroke-width="1.5" />
+              <line x1="26" y1="30" x2="38" y2="30" stroke="#1b261a" stroke-width="1.5" />
+              <line x1="26" y1="34" x2="34" y2="34" stroke="#1b261a" stroke-width="1.5" />
+            </svg>
+          </div>
+          <span class="folder-label">Experience</span>
+          <span class="folder-subtext">Current and Past Experience</span>
+        </button>
+
+        <!-- Folder 3: Updates -->
+        <button type="button" class="folder-card" data-folder="projects" aria-haspopup="dialog"
+          aria-label="Open Updates folder">
+          <span class="folder-index-badge">03</span>
+          <div class="folder-icon-wrapper" aria-hidden="true">
+            <svg class="folder-icon-svg" viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="8" width="26" height="8" fill="#556c52" stroke="#1b261a" stroke-width="2" rx="1" />
+              <rect x="2" y="14" width="60" height="34" fill="#93a891" stroke="#1b261a" stroke-width="2" rx="2" />
+              <rect x="6" y="18" width="52" height="26" fill="#fcfbfa" stroke="#1b261a" stroke-width="1.5" />
+              <!-- Retro broadcast / dispatch bell icon -->
+              <path d="M32 23 C28 23 26 27 26 31 L24 35 L40 35 L38 31 C38 27 36 23 32 23 Z" fill="#c8953e"
+                stroke="#1b261a" stroke-width="1.5" />
+              <circle cx="32" cy="38" r="2" fill="#1b261a" />
+              <line x1="20" y1="26" x2="23" y2="28" stroke="#556c52" stroke-width="1.5" />
+              <line x1="44" y1="26" x2="41" y2="28" stroke="#556c52" stroke-width="1.5" />
+            </svg>
+          </div>
+          <span class="folder-label">Updates</span>
+          <span class="folder-subtext">What I've Been Up To</span>
+        </button>
+
+        <!-- Folder 4: Awards -->
+        <button type="button" class="folder-card" data-folder="awards" aria-haspopup="dialog"
+          aria-label="Open Awards folder">
+          <span class="folder-index-badge">04</span>
+          <div class="folder-icon-wrapper" aria-hidden="true">
+            <svg class="folder-icon-svg" viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="8" width="26" height="8" fill="#556c52" stroke="#1b261a" stroke-width="2" rx="1" />
+              <rect x="2" y="14" width="60" height="34" fill="#93a891" stroke="#1b261a" stroke-width="2" rx="2" />
+              <rect x="6" y="18" width="52" height="26" fill="#fcfbfa" stroke="#1b261a" stroke-width="1.5" />
+              <!-- Star / Trophy badge -->
+              <polygon points="32,22 35,29 42,29 36,33 38,40 32,36 26,40 28,33 22,29 29,29" fill="#c8953e"
+                stroke="#1b261a" stroke-width="1.5" />
+            </svg>
+          </div>
+          <span class="folder-label">Awards</span>
+          <span class="folder-subtext">Scholarships, Honors & Awards</span>
+        </button>
+
+        <!-- Folder 5: Resume/Contact -->
+        <button type="button" class="folder-card" data-folder="contact" aria-haspopup="dialog"
+          aria-label="Open Resume and Contact folder">
+          <span class="folder-index-badge">05</span>
+          <div class="folder-icon-wrapper" aria-hidden="true">
+            <svg class="folder-icon-svg" viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="8" width="26" height="8" fill="#556c52" stroke="#1b261a" stroke-width="2" rx="1" />
+              <rect x="2" y="14" width="60" height="34" fill="#93a891" stroke="#1b261a" stroke-width="2" rx="2" />
+              <rect x="6" y="18" width="52" height="26" fill="#fcfbfa" stroke="#1b261a" stroke-width="1.5" />
+              <!-- Mail / Card icon -->
+              <rect x="20" y="24" width="24" height="15" fill="#f0f5ee" stroke="#1b261a" stroke-width="1.5" />
+              <polyline points="20,24 32,32 44,24" fill="none" stroke="#1b261a" stroke-width="1.5" />
+            </svg>
+          </div>
+          <span class="folder-label">Resume/<wbr>Contact</span>
+          <span class="folder-subtext">Connect with Me!</span>
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================================
+       RETRO WINDOW MODAL CARD (Pop-up with Title Bar & Red Close Button)
+       ============================================================================== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-hidden="true"
+    aria-labelledby="windowTitle">
+
+    <div class="retro-window" id="retroWindow">
+
+      <!-- Title Bar -->
+      <div class="window-titlebar">
+        <div class="window-titlebar-left">
+          <svg class="window-type-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" />
+            <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <span class="window-title" id="windowTitle">Section.exe</span>
+        </div>
+
+        <!-- Window Controls with signature Red Close Button -->
+        <div class="window-controls">
+          <button type="button" class="window-btn" aria-label="Minimize Window" title="Minimize (Retro)">_</button>
+          <button type="button" class="window-btn" aria-label="Maximize Window"
+            title="Maximize (Retro)">&#9633;</button>
+          <button type="button" class="window-btn btn-close" id="btnClose" aria-label="Close Window (Esc)"
+            title="Close Window (Esc)">&#10005;</button>
+        </div>
+      </div>
+
+      <!-- Window Body (Rendered from content.js) -->
+      <div class="window-body" id="windowBody" tabindex="0">
+        <!-- Dynamic content injected here -->
+      </div>
+
+      <!-- Window Status Bar -->
+      <div class="window-statusbar">
+        <span id="windowStatusMsg">STATUS: 200 OK</span>
+        <span>READ_WRITE: LOCAL</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ==============================================================================
+       BOTTOM BAR (RETRO TASKBAR / DOCK)
+       ============================================================================== -->
+  <footer class="os-taskbar" role="contentinfo">
+
+    <div class="taskbar-left">
+      <button type="button" class="taskbar-start-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <svg class="os-icon-logo" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z" />
+        </svg>
+        <span>START</span>
+      </button>
+
+      <span class="taskbar-active-task" id="taskbarActiveText" aria-live="polite"></span>
+    </div>
+
+    <!-- LinkedIn & GitHub Icon Links -->
+    <div class="taskbar-center">
+      <nav class="social-dock-links" aria-label="Professional Profiles">
+
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/oluwafisayomi-oyolola" class="social-icon-btn" id="dockLinkedinLink"
+          target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/Fisayoooooo" class="social-icon-btn" id="dockGithubLink" target="_blank"
+          rel="noopener noreferrer" aria-label="Visit GitHub Profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+      </nav>
+    </div>
+
+    <!-- Clock / System Tray -->
+    <div class="taskbar-right">
+      <div class="taskbar-tray" title="System Clock">
+        <span class="clock-display" id="clockDisplay" aria-label="System Time">12:00:00</span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scripts: Content definition followed by application controller -->
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
